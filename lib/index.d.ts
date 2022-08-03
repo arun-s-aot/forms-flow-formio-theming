@@ -1,7 +1,7 @@
 declare const _default: {
     framework: string;
     templates: {
-        uswds: {
+        formsflowFormioTheme: {
             transform(type: any, text: any): any;
             address: {
                 form: string;

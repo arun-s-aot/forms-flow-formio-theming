@@ -1,12 +1,12 @@
 import { Formio } from 'formiojs/formio.form.js';
 import Flatpickr from 'flatpickr';
 window.flatpickr = window['flatpickr-css'] = Flatpickr;
-import USWDS from '@formio/uswds';
+import formsflowFormioTheme from '@formio/formsflowFormioTheme';
 import VPAT from '@formio/vpat';
 import Premium from '@formio/premium';
-USWDS.version = __VERSION__;
-Formio.USWDS = USWDS;
+formsflowFormioTheme.version = __VERSION__;
+Formio.formsflowFormioTheme = formsflowFormioTheme;
 
 // Use modules.
-Formio.use([USWDS, VPAT, Premium]);
-Formio.Templates.framework = 'uswds';
+Formio.use([formsflowFormioTheme, VPAT, Premium]);
+Formio.Templates.framework = 'formsflowFormioTheme';

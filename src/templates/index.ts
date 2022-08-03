@@ -1,5 +1,5 @@
-import uswds from './uswds';
+import formsflowFormioTheme from './formsflowFormioTheme';
 
 export default {
-  uswds,
+  formsflowFormioTheme,
 };

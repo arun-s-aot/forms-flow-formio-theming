@@ -1,13 +1,13 @@
-import USWDSSelectComponent from './Select';
-import USWDSRadioComponent from './Radio/Radio';
-import USWDSButtonComponent from './button/Button';
-import USWDSCheckboxComponent from './Checkbox/Checkbox';
-import USWDSSelectBoxesComponent from './selectboxes/SelectBoxes';
+import FormsflowFormioThemeSelectComponent from './Select';
+import formsflowFormioThemeRadioComponent from './Radio/Radio';
+import FormsflowFormioThemeButtonComponent from './button/Button';
+import FormsflowFormioThemeCheckboxComponent from './Checkbox/Checkbox';
+import FormsflowFormioThemeSelectBoxesComponent from './selectboxes/SelectBoxes';
 
 export default {
-  select: USWDSSelectComponent,
-  radio: USWDSRadioComponent,
-  button: USWDSButtonComponent,
-  checkbox: USWDSCheckboxComponent,
-  selectboxes: USWDSSelectBoxesComponent
+  select: FormsflowFormioThemeSelectComponent,
+  radio: formsflowFormioThemeRadioComponent,
+  button: FormsflowFormioThemeButtonComponent,
+  checkbox: FormsflowFormioThemeCheckboxComponent,
+  selectboxes: FormsflowFormioThemeSelectBoxesComponent
 };

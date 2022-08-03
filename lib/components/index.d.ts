@@ -1,12 +1,12 @@
-import USWDSSelectComponent from './Select';
-import USWDSButtonComponent from './button/Button';
-import USWDSCheckboxComponent from './Checkbox/Checkbox';
-import USWDSSelectBoxesComponent from './selectboxes/SelectBoxes';
+import FormsflowFormioThemeSelectComponent from './Select';
+import FormsflowFormioThemeButtonComponent from './button/Button';
+import FormsflowFormioThemeCheckboxComponent from './Checkbox/Checkbox';
+import FormsflowFormioThemeSelectBoxesComponent from './selectboxes/SelectBoxes';
 declare const _default: {
-    select: typeof USWDSSelectComponent;
+    select: typeof FormsflowFormioThemeSelectComponent;
     radio: import("formiojs").ClassWithEditForm<typeof import("formiojs/types/components/_classes/field/field").Field>;
-    button: typeof USWDSButtonComponent;
-    checkbox: typeof USWDSCheckboxComponent;
-    selectboxes: typeof USWDSSelectBoxesComponent;
+    button: typeof FormsflowFormioThemeButtonComponent;
+    checkbox: typeof FormsflowFormioThemeCheckboxComponent;
+    selectboxes: typeof FormsflowFormioThemeSelectBoxesComponent;
 };
 export default _default;

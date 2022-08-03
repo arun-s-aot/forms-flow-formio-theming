@@ -29,7 +29,7 @@ jobs:
 
   docker:
     environment:
-      IMAGE_PATH: formio/uswds-viewer
+      IMAGE_PATH: formio/formsflowFormioTheme-viewer
     docker:
       - image: cimg/node:lts
     steps:

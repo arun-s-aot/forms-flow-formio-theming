@@ -1,5 +1,5 @@
 {
-  "name": "@formio/uswds",
+  "name": "@formio/forms-flow-formio-theme",
   "version": "2.4.7",
   "description": "US Web Design System templates for form.io",
   "main": "lib/index.js",
@@ -20,11 +20,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/formio/uswds.git"
+    "url": "git+https://github.com/arun-s-aot/forms-flow-formio-theming.git"
   },
   "keywords": [
     "Form.io",
-    "USWDS",
+    "formsflowFormioTheme",
     "Us",
     "Web",
     "Design",
@@ -61,7 +61,7 @@
   "author": "Form.io Developers <support@form.io>",
   "license": "OSLv3",
   "bugs": {
-    "url": "https://github.com/formio/uswds/issues"
+    "url": "https://github.com/arun-s-aot/forms-flow-formio-theming/issues"
   },
-  "homepage": "https://github.com/formio/uswds#readme"
+  "homepage": "https://github.com/arun-s-aot/forms-flow-formio-theming#readme"
 }

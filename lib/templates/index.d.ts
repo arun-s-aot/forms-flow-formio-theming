@@ -1,5 +1,5 @@
 declare const _default: {
-    uswds: {
+    formsflowFormioTheme: {
         transform(type: any, text: any): any;
         address: {
             form: string;

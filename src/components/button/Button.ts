@@ -4,7 +4,7 @@ import editForm from './Button.form';
 const ButtonComponent = Components.components.button;
 const FieldComponent = Components.components.field;
 
-export default class USWDSButtonComponent extends ButtonComponent {
+export default class FormsflowFormioThemeButtonComponent extends ButtonComponent {
   static editForm = editForm;
   [x: string]: any;
   getInputInfo() {

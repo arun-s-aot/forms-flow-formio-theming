@@ -41,12 +41,12 @@ gulp.task('sass', function(){
 
 gulp.task('copy-css', function(){
   return gulp.src('lib/css/styles.css')
-    .pipe(rename('uswds.css'))
+    .pipe(rename('formsflowFormioTheme.css'))
     .pipe(gulp.dest('dist'))
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src('dist/uswds.css')
+  return gulp.src('dist/formsflowFormioTheme.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename({
       extname: '.min.css'

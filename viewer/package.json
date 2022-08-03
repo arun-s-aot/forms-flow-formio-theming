@@ -1,5 +1,5 @@
 {
-  "name": "uswds-viewer",
+  "name": "formsflowFormioTheme-viewer",
   "version": "2.1.8-rc.4",
   "description": "A Form.io form viewer application for US Web Design Standards",
   "main": "index.js",
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/formio/formio-viewer#readme",
   "dependencies": {
     "@formio/premium": "github:formio/premium#v1.17.2-rc.1",
-    "@formio/uswds": "github:formio/uswds#v2.4.3",
+    "@formio/formsflowFormioTheme": "github:formio/formsflowFormioTheme#v2.4.3",
     "@formio/vpat": "github:formio/vpat#v2.4.1",
     "autocompleter": "^6.1.2",
     "core-js": "^3.20.0",
@@ -31,7 +31,7 @@
     "formiojs": "^4.14.1-rc.4",
     "i18next": "^21.6.2",
     "seamless": "^1.4.1",
-    "uswds": "^2.12.2"
+    "formsflowFormioTheme": "^2.12.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",

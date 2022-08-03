@@ -3,7 +3,7 @@ import editForm from './Checkbox.form';
 
 const CheckboxComponent = Components.components.checkbox;
 
-export default class USWDSCheckboxComponent extends CheckboxComponent {
+export default class FormsflowFormioThemeCheckboxComponent extends CheckboxComponent {
   public noField;
   public static editForm = editForm;
 

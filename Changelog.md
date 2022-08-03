@@ -82,17 +82,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
  - FIO-3656 Fixed issue when columns were not auto collapsing in some cases
  - FIO-3519 Made 'scroll on top' option in wizard to scroll to the top of progressbar
- - Changes for 2.4.0 uswds release:
+ - Changes for 2.4.0 formsflowFormioTheme release:
  - FIO-3208 Fixed issue when description was displaying under charcount
  - FIO-3206 Fixed styles for labels
- - FIO-2648 Adjusted uswds styles to work with vpat
+ - FIO-2648 Adjusted formsflowFormioTheme styles to work with vpat
  - FIO-2546 Fixed focus outline of builder modal buttons, which were not fully visible for Content component
  - FIO-2544 Fixed issue when suffixes and prefixes were displayed wrong on a big scale
  - FIO-2535 Fixed modal buttons that were displaying outside of modal window in FMG
 
 ## 2.3.8
 ### Fixed
- - FIO-3598 Rolled back USWDS version to fix issues with radio and checkboxes
+ - FIO-3598 Rolled back formsflowFormioTheme version to fix issues with radio and checkboxes
 
 ## 2.3.7
 ### Fixed
@@ -130,7 +130,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2.3.1
 ### Fixed
- - https://github.com/formio/uswds/pull/185
+ - https://github.com/formio/formsflowFormioTheme/pull/185
 
 ## 2.3.0-rc.2
 ### Changed
@@ -138,7 +138,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2.3.0-rc.1
 ### Changed
- - https://github.com/formio/uswds/pull/176
+ - https://github.com/formio/formsflowFormioTheme/pull/176
 
 ## 2.2.0
 ### Changed
@@ -152,7 +152,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
  - Upgrade formiojs@4.13.0-rc.5
 ### Changed
- - Changes for USWDS v2.1.0
+ - Changes for formsflowFormioTheme v2.1.0
 
 ## 2.0.3
 ### Fixed
@@ -201,7 +201,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2.0.1-rc.1
 ### Fixed
- - VPAT-623 Added address component to USWDS templates with correct styles
+ - VPAT-623 Added address component to formsflowFormioTheme templates with correct styles
  - VPAT-592 Fixed incorrect presentation of the last cell in a table in IE/FF
  - VPAT-623 Fixed incorrect display of choicesjs selects in some cases
 
@@ -214,7 +214,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
  - VPAT-592 Changed data grid table to populate all available space
- - VPAT-594 Applied USWDS select styling to choicesjs selects
+ - VPAT-594 Applied formsflowFormioTheme select styling to choicesjs selects
 
 ## 2.0.0-rc.9
 ### Changed
@@ -225,7 +225,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
  - Upgrade formiojs@4.12.1-rc.26
 
 ### Fixed
- - VPAT-719 Fixed disappearing fields when failing validation in USWDS
+ - VPAT-719 Fixed disappearing fields when failing validation in formsflowFormioTheme
  - VPAT-697 Added border outlines to layout component in builder
 
 ## 2.0.0-rc.7
@@ -248,28 +248,28 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 1.8.2-rc.5
 ### Changed
- - Upgrade uswds-viewer base to 2.97.0-rc.11
+ - Upgrade formsflowFormioTheme-viewer base to 2.97.0-rc.11
 
 ## 1.8.2-rc.4
 ### Changed
- - uswds-viewer Docker base to 2.97.0-rc.10
+ - formsflowFormioTheme-viewer Docker base to 2.97.0-rc.10
  - formiojs@4.11.1-rc.5
 
 ## 1.8.2-rc.3
 ### Changed
- - uswds-viewer Docker base to 2.97.0-rc.9
+ - formsflowFormioTheme-viewer Docker base to 2.97.0-rc.9
 
 ## 1.8.2-rc.2
 ### Changed
- - uswds-viewer Docker base to 2.97.0-rc.7
+ - formsflowFormioTheme-viewer Docker base to 2.97.0-rc.7
 
 ## 1.8.2-rc.1
 ### Changed
- - uswds-viewer Docker base to 2.97.0-rc.6
+ - formsflowFormioTheme-viewer Docker base to 2.97.0-rc.6
 
 ## 1.8.1
 ### Changed
- - Reverted docker base back to 2.96.0 for uswds-viewer
+ - Reverted docker base back to 2.96.0 for formsflowFormioTheme-viewer
 
 ## 1.8.0
 ### Changed
@@ -294,7 +294,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## 1.5.0
 ### Changed
  - Columns layout not spanning with the width of the page.
- - HTML component styles to be in accordance with USWDS.
+ - HTML component styles to be in accordance with formsflowFormioTheme.
 
 ### Fixed
  - Issue with components being too close to each other.
@@ -312,7 +312,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## 1.3.2
 ### Changed
  - Added column size variable to columns template.
- - Added mapping function to map bootstrap columns sizes to uswds.
+ - Added mapping function to map bootstrap columns sizes to formsflowFormioTheme.
  - Fixed margins in component template.
 
 ## 1.3.1

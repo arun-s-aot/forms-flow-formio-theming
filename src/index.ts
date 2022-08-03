@@ -1,7 +1,7 @@
 import templates from './templates';
 import components from './components';
 export default {
-  framework: 'uswds',
+  framework: 'formsflowFormioTheme',
   templates,
   components,
 };
