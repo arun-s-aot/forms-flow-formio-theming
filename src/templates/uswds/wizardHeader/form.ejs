@@ -1,0 +1,21 @@
+<div class="formsflow-step-indicator formsflow-step-indicator--no-labels" ref="{{ ctx.wizardKey }}-header" aria-label="Wizard" id="{{ ctx.wizardKey }}-header">
+  <ol class="formsflow-step-indicator__segments" tabindex="0" aria-label="Progress bar, Step {{ctx.currentPage + 1}} of {{ctx.panels.length}}, {{ctx.panels[ctx.currentPage].title}}">
+    {% ctx.panels.forEach(function(panel, index) { %}
+    <li data-index="{{index}}" class="formsflow-step-indicator__segment {{ctx.currentPage === index ? 'formsflow-step-indicator__segment--current' : ''}} {{ctx.currentPage > index ? 'formsflow-step-indicator__segment--complete' : ''}}"></li>
+    {% }) %}
+  </ol>
+  <div class="formsflow-sr-only" ref="{{ ctx.wizardKey }}-progressbar" tabindex="-1">Progress bar, Step {{ctx.currentPage + 1}} of {{ctx.panels.length}}, {{ctx.panels[ctx.currentPage].title}}</div>
+  <div class="formsflow-step-indicator__header">
+    <div class="formsflow-step-indicator__heading">
+      <span class="formsflow-sr-only">Progress bar, step</span>
+      <span class="formsflow-step-indicator__heading-counter">
+        <span class="formsflow-step-indicator__current-step">{{ctx.currentPage + 1}}</span>
+        <span class="formsflow-step-indicator__total-steps">of {{ctx.panels.length}}</span>
+      </span>
+      <span class="formsflow-step-indicator__heading-text">{{ctx.panels[ctx.currentPage].title}}</span>
+      {% if (ctx.panels[ctx.currentPage].tooltip) { %}
+      <i ref="{{ctx.wizardKey}}-tooltip" class="{{ctx.iconClass('question-sign')}} text-muted" data-tooltip="{{ctx.panels[ctx.currentPage].tooltip}}" tabindex="0"></i>
+      {% } %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<fieldset class="formsflow-fieldset">
+  {% if (ctx.component.legend) { %}
+  <legend ref="header" class="formsflow-sr-only">
+    {{ctx.t(ctx.component.legend)}}
+  </legend>
+  <span class="legend-wrapper formsflow-legend">
+    <span class="position-relative {{ctx.component.collapsible ? 'formio-clickable' : ''}}">
+      {{ctx.t(ctx.component.legend)}}
+    </span>
+    {% if (ctx.component.tooltip) { %}
+      <span ref="tooltip" data-tooltip="{{ctx.component.tooltip}}" class="{{ctx.iconClass('question-sign')}} text-base" tabindex="0"></span>
+    {% } %}
+  </span>
+  {% } %}
+  {% if (!ctx.collapsed) { %}
+  <div class="fieldset-body" ref="{{ctx.nestedKey}}">
+    {{ctx.children}}
+  </div>
+  {% } %}
+</fieldset>

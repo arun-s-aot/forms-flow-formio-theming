@@ -1,0 +1,67 @@
+{
+  "name": "@formio/uswds",
+  "version": "2.4.7",
+  "description": "US Web Design System templates for form.io",
+  "main": "lib/index.js",
+  "scripts": {
+    "test:coverage": "nyc --reporter=text mocha --reporter spec './{,!(node_modules)/**/}*.spec.js'",
+    "test": "mocha --require ts-node/register --reporter spec \"./{,!(node_modules)/**/}*.spec.ts",
+    "watch": "tsc -w",
+    "build": "gulp build && tsc && webpack && webpack --config webpack.prod.js",
+    "lint": "tslint -p .",
+    "prepublish": "npm run build"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formio/uswds.git"
+  },
+  "keywords": [
+    "Form.io",
+    "USWDS",
+    "Us",
+    "Web",
+    "Design",
+    "Standards"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/ejs": "^3.1.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.10.2",
+    "@types/sinon": "^10.0.4",
+    "chai": "^4.3.4",
+    "copy-props": "^3.0.1",
+    "del": "^6.0.0",
+    "formiojs": "^4.14.0-rc.30",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-template": "^5.0.0",
+    "mocha": "^9.2.0",
+    "nyc": "^15.1.0",
+    "pre-commit": "^1.2.2",
+    "sass": "^1.42.1",
+    "sinon": "^11.1.2",
+    "ts-node": "^10.2.1",
+    "ts-sinon": "^2.0.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.4.3",
+    "webpack": "5.38.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "author": "Form.io Developers <support@form.io>",
+  "license": "OSLv3",
+  "bugs": {
+    "url": "https://github.com/formio/uswds/issues"
+  },
+  "homepage": "https://github.com/formio/uswds#readme"
+}

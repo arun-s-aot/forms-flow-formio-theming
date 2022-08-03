@@ -1,0 +1,37 @@
+<div
+  ref="messageContainer"
+  class="text-secondary-dark width-full margin-top-05 formio-errors"
+></div>
+
+<div class="formsflow-checkbox">
+  <{{ctx.input.type}}
+    id="{{ctx.id}}-{{ctx.input.attr.name}}"
+    ref="input"
+    class="formsflow-checkbox__input {{ctx.component.tileView ? 'formsflow-checkbox__input--tile' : ''}}"
+    {% for (var attr in ctx.input.attr) { %}
+    {{attr}}="{{ctx.input.attr[attr]}}"
+    {% } %}
+    {% if (ctx.checked) { %}checked=true{% } %}
+    aria-required="{{ctx.component.validate.required}}"
+    {% if (ctx.component.description) { %}
+    aria-describedby="d-{{ctx.instance.id}}-{{ctx.component.key}}"
+    {% } %}
+  ></{{ctx.input.type}}>
+  <label
+    ref="label"
+    class="{{ctx.input.labelClass}} formsflow-checkbox__label"
+    for="{{ctx.id}}-{{ctx.input.attr.name}}"
+  >
+    {{ctx.input.label}}
+    {{ctx.input.content}}
+    {% if (ctx.component.tooltip) { %}
+    <span ref="tooltip" data-tooltip="{{ctx.component.tooltip}}" class="{{ctx.iconClass('question-sign')}} text-base" tabindex="0"></span>
+    {% } %}
+  </label>
+</div>
+
+{% if (ctx.component.description) { %}
+  <div class="text-base-dark">
+    <span id="d-{{ctx.instance.id}}-{{ctx.component.key}}">{{ctx.t(ctx.component.description)}}</span>
+  </div>
+{% } %}

@@ -1,0 +1,34 @@
+<div class="formsflow-accordion formsflow-accordion--bordered margin-bottom-205">
+  <h2 class="formsflow-accordion__heading" ref="header">
+    {% if (ctx.component.collapsible) { %}
+      <div
+        tabindex="0"
+        role="button"
+        class="formsflow-accordion__button"
+        aria-expanded="{{ctx.component.collapsible ? !ctx.collapsed : true}}"
+        aria-controls="{{ctx.instance.id}}-{{ctx.component.key}}"
+      >
+        {{ctx.t(ctx.component.title)}}
+        {% if (ctx.component.tooltip) { %}
+          <i ref="tooltip" data-tooltip="{{ctx.component.tooltip}}" class="{{ctx.iconClass('question-sign')}} text-based" tabindex="0"></i>
+        {% } %}
+      </div>
+    {% } else { %}
+      <div class="formsflow-accordion__button non-collapsible-panel--button">
+        {{ctx.t(ctx.component.title)}}
+        {% if (ctx.component.tooltip) { %}
+          <i ref="tooltip" data-tooltip="{{ctx.component.tooltip}}" class="{{ctx.iconClass('question-sign')}} text-based" tabindex="0"></i>
+        {% } %}
+      </div>
+    {% } %}
+  </h2>
+
+  <div
+    id="{{ctx.instance.id}}-{{ctx.component.key}}"
+    class="formio-panel-content formsflow-accordion__content formsflow-prose"
+    ref="{{ctx.nestedKey}}"
+    {% if (ctx.component.collapsible && ctx.collapsed) { %}hidden{% } %}
+  >
+    {{ctx.children}}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<table class="formsflow-table" role="presentation">
+  <tbody>
+  {{ctx.rows}}
+  {% if (!ctx.disabled) { %}
+  <tr>
+    <td colspan="2">
+      <button
+        class="formsflow-button formio-button-add-another"
+        ref="addButton"
+        {% if (ctx.component.description) { %}
+        aria-describedby="l-{{ctx.instance.id}}-{{ctx.component.key}}"
+        {% } %}
+      >
+        <i class="{{ctx.iconClass('plus')}}"></i>
+        {{ctx.t(ctx.addAnother)}}
+      </button>
+    </td>
+  </tr>
+  {% } %}
+  </tbody>
+</table>
