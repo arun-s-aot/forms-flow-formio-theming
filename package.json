@@ -1,7 +1,7 @@
 {
-  "name": "@formio/forms-flow-formio-theme",
-  "version": "2.4.7",
-  "description": "US Web Design System templates for form.io",
+  "name": "@forms-flow/forms-flow-formio-theme",
+  "version": "0.0.1",
+  "description": "Formsflow Web Design System templates for form.io",
   "main": "lib/index.js",
   "scripts": {
     "test:coverage": "nyc --reporter=text mocha --reporter spec './{,!(node_modules)/**/}*.spec.js'",
