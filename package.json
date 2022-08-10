@@ -1,5 +1,5 @@
 {
-  "name": "@forms-flow/forms-flow-formio-theme",
+  "name": "forms-flow-formio-theme",
   "version": "0.0.1",
   "description": "Formsflow Web Design System templates for form.io",
   "main": "lib/index.js",
@@ -25,8 +25,6 @@
   "keywords": [
     "Form.io",
     "formsflowFormioTheme",
-    "Us",
-    "Web",
     "Design",
     "Standards"
   ],
@@ -63,5 +61,8 @@
   "bugs": {
     "url": "https://github.com/arun-s-aot/forms-flow-formio-theming/issues"
   },
-  "homepage": "https://github.com/arun-s-aot/forms-flow-formio-theming#readme"
+  "homepage": "https://github.com/arun-s-aot/forms-flow-formio-theming#readme",
+  "dependencies": {
+    "@sinonjs/fake-timers": "^6.0.1"
+  }
 }

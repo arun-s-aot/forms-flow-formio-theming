@@ -116,7 +116,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2.3.3-rc.1
 ### Fixed
- - FIO-3104: Fixes an issue where formsflow-button class makes buttons to be always visible event when they have formio-hidden class
+ - FIO-3104: Fixes an issue where formsflow-formio-button class makes buttons to be always visible event when they have formio-hidden class
 
 ### Changed
  - Upgrade dependencies.

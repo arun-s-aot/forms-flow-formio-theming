@@ -60,8 +60,8 @@
 {% if (!ctx.disabled && (ctx.component.multiple || !ctx.files.length)) { %}
   {% if (ctx.self.useWebViewCamera) { %}
     <div class="fileSelector border-dashed border-width-1px text-center padding-2 margin-top-2 margin-bottom-2">
-      <button class="formsflow-button formsflow-button--accent-cool" ref="galleryButton"><i class="fa fa-book"></i> {{ctx.t('Gallery')}}</button>
-      <button class="formsflow-button formsflow-button--accent-cool" ref="cameraButton"><i class="fa fa-camera"></i> {{ctx.t('Camera')}}</button>
+      <button class="formsflow-formio-button formsflow-formio-button--accent-cool" ref="galleryButton"><i class="fa fa-book"></i> {{ctx.t('Gallery')}}</button>
+      <button class="formsflow-formio-button formsflow-formio-button--accent-cool" ref="cameraButton"><i class="fa fa-camera"></i> {{ctx.t('Camera')}}</button>
     </div>
   {% } else if (!ctx.self.cameraMode) { %}
     <div class="fileSelector border-dashed border-width-1px text-center padding-2 margin-top-2 margin-bottom-2" ref="fileDrop">
@@ -81,8 +81,8 @@
     <div>
       <video class="video" autoplay="true" ref="videoPlayer" tabindex="-1"></video>
     </div>
-    <button class="formsflow-button formsflow-button--accent-cool" ref="takePictureButton"><i class="fa fa-camera"></i> {{ctx.t('Take Picture')}}</button>
-    <button class="formsflow-button formsflow-button--accent-cool" ref="toggleCameraMode">{{ctx.t('Switch to file upload')}}</button>
+    <button class="formsflow-formio-button formsflow-formio-button--accent-cool" ref="takePictureButton"><i class="fa fa-camera"></i> {{ctx.t('Take Picture')}}</button>
+    <button class="formsflow-formio-button formsflow-formio-button--accent-cool" ref="toggleCameraMode">{{ctx.t('Switch to file upload')}}</button>
   {% } %}
 {% } %}
 {% ctx.statuses.forEach(function(status) { %}

@@ -9,9 +9,9 @@
     {{row}}
     {% if (ctx.openRows[rowIndex] && !ctx.readOnly) { %}
     <div class="editgrid-actions">
-      <button class="formsflow-button formsflow-button--accent-cool" ref="{{ctx.editgridKey}}-saveRow">{{ctx.t(ctx.component.saveRow || 'Save')}}</button>
+      <button class="formsflow-formio-button formsflow-formio-button--accent-cool" ref="{{ctx.editgridKey}}-saveRow">{{ctx.t(ctx.component.saveRow || 'Save')}}</button>
       {% if (ctx.component.removeRow) { %}
-      <button class="formsflow-button formsflow-button--secondary" ref="{{ctx.editgridKey}}-cancelRow">{{ctx.t(ctx.component.removeRow || 'Cancel')}}</button>
+      <button class="formsflow-formio-button formsflow-formio-button--secondary" ref="{{ctx.editgridKey}}-cancelRow">{{ctx.t(ctx.component.removeRow || 'Cancel')}}</button>
       {% } %}
     </div>
     {% } %}

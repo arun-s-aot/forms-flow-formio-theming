@@ -10,7 +10,7 @@ export default {
   'formio-modal-save': 'formsflow-error',
   'formio-alert-danger': 'formsflow-alert formsflow-alert--error formsflow-alert--no-icon',
   'formio-alert-success': 'formsflow-alert formsflow-alert--success formsflow-alert--no-icon',
-  'formio-modal-cancel-button': 'formsflow-button formsflow-button--secondary',
-  'formio-modal-confirm-button': 'formsflow-button',
+  'formio-modal-cancel-button': 'formsflow-formio-button formsflow-formio-button--secondary',
+  'formio-modal-confirm-button': 'formsflow-formio-button',
   'form-control ui fluid selection dropdown': 'formsflow-select maxw-full',
 };

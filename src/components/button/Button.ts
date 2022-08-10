@@ -9,14 +9,14 @@ export default class FormsflowFormioThemeButtonComponent extends ButtonComponent
   [x: string]: any;
   getInputInfo() {
     const info = this.inputInfo;
-    info.attr.class = 'formsflow-button';
+    info.attr.class = 'formsflow-formio-button';
     switch (this.component.theme) {
       case 'secondary':
-        info.attr.class += ' formsflow-button--secondary';
+        info.attr.class += ' formsflow-formio-button--secondary';
         break;
       case 'info':
       case 'accent-cool':
-        info.attr.class += ' formsflow-button--accent-cool';
+        info.attr.class += ' formsflow-formio-button--accent-cool';
         break;
       case 'success':
         info.attr.class += ' bg-green';
@@ -25,13 +25,13 @@ export default class FormsflowFormioThemeButtonComponent extends ButtonComponent
         info.attr.class += ' bg-secondary-vivid';
         break;
       case 'warning':
-        info.attr.class += ' formsflow-button--accent-warm';
+        info.attr.class += ' formsflow-formio-button--accent-warm';
         break;
       case 'base':
-        info.attr.class += ' formsflow-button--base';
+        info.attr.class += ' formsflow-formio-button--base';
         break;
       case 'outline':
-        info.attr.class += ' formsflow-button--outline';
+        info.attr.class += ' formsflow-formio-button--outline';
         break;
     }
     if (this.component.customClass) {

@@ -15,7 +15,7 @@ span[role=link]:hover {
 .builder-sidebar .form-builder-panel .form-builder-group-header .formsflow-accordion__button.builder-group-button {
   background-color: #f0f0f0;
 }
-.builder-sidebar .form-builder-panel .formsflow-button {
+.builder-sidebar .form-builder-panel .formsflow-formio-button {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 5px;
@@ -33,11 +33,11 @@ span[role=link]:hover {
   flex-direction: row-reverse;
 }
 
-.component-btn-group .component-settings-button.formsflow-button {
+.component-btn-group .component-settings-button.formsflow-formio-button {
   margin: 3px;
 }
 
-.component-btn-group .formsflow-button.component-settings-button-paste {
+.component-btn-group .formsflow-formio-button.component-settings-button-paste {
   display: none;
 }
 
@@ -336,7 +336,7 @@ span[role=link]:hover {
     flex-direction: column;
   }
 }
-.wizard-nav-container li .formsflow-button {
+.wizard-nav-container li .formsflow-formio-button {
   margin-bottom: 0.25em;
 }
 
@@ -408,7 +408,7 @@ ul.formsflow-sidenav {
   max-width: 100% !important;
 }
 
-.formsflow-button + .has-error, .formsflow-button + .has-success {
+.formsflow-formio-button + .has-error, .formsflow-formio-button + .has-success {
   display: none;
 }
 
@@ -531,7 +531,7 @@ div[ref=modalContents] .formsflow-form-group--error {
     text-indent: 0;
   }
 }
-.formsflow-button.formio-hidden {
+.formsflow-formio-button.formio-hidden {
   background-color: initial;
   border: none;
   box-shadow: none;
